@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Selected engineering work by Yurii Sachenko — Python backend, AI document processing, API integrations, automation and legacy recovery." />
+  <title>Yurii Sachenko — Engineering Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <canvas class="ambient-canvas" id="ambientCanvas" aria-hidden="true"></canvas>
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+  <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Home"><span class="brand-mark">YS</span><span>Yurii Sachenko</span></a>
+    <nav class="nav" aria-label="Primary">
+      <a href="#work">Work</a>
+      <a href="#capabilities">Capabilities</a>
+      <a href="#about">About</a>
+    </nav>
+    <a class="header-cta" href="#contact">Start a project</a>
+  </header>
+
+  <main id="top">
+    <section class="hero section-shell">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="pulse"></span> Python · AI · Integrations · Production Systems</div>
+        <h1>I build the parts<br/>that have to <em>actually work.</em></h1>
+        <p class="hero-lede">Backend systems, automation pipelines, document AI, API integrations and recovery of difficult legacy projects — from technical audit to deployment and operational handoff.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#work">View selected work</a>
+          <a class="btn btn-ghost" href="#contact">Discuss a project</a>
+        </div>
+      </div>
+      <div class="hero-panel" aria-label="Engineering focus">
+        <div class="terminal-top"><span></span><span></span><span></span><small>production-minded engineering</small></div>
+        <div class="terminal-body">
+          <div class="terminal-row"><b>01</b><span>Trace the real failure path</span><i>audit</i></div>
+          <div class="terminal-row"><b>02</b><span>Design stable boundaries</span><i>architecture</i></div>
+          <div class="terminal-row"><b>03</b><span>Automate repeatable flows</span><i>delivery</i></div>
+          <div class="terminal-row"><b>04</b><span>Validate with real scenarios</span><i>QA</i></div>
+          <div class="terminal-row"><b>05</b><span>Leave the system operable</span><i>handoff</i></div>
+        </div>
+        <div class="hero-stack">
+          <span>Python</span><span>FastAPI</span><span>PostgreSQL</span><span>Redis</span><span>Celery</span><span>Docker</span><span>REST APIs</span><span>LLM / Vision</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="work-intro section-shell" id="work">
+      <div>
+        <div class="kicker">Selected work</div>
+        <h2>Six cases across automation, AI, API integration and system recovery.</h2>
+      </div>
+      <p>Each case focuses on the engineering problem, the decisions made and the delivered result — not just a list of technologies.</p>
+    </section>
+
+    <section class="filters section-shell" aria-label="Project filters">
+      <button class="filter active" data-filter="all">All work</button>
+      <button class="filter" data-filter="automation">Automation</button>
+      <button class="filter" data-filter="backend">Backend</button>
+      <button class="filter" data-filter="ai">AI / Document</button>
+      <button class="filter" data-filter="recovery">Recovery</button>
+      <button class="filter" data-filter="api">API / OAuth</button>
+    </section>
+
+    <section class="project-grid section-shell" id="projectGrid">
+      <article class="project-card" data-tags="automation api backend" data-project="sendpulse">
+        <div class="project-cover image-cover"><img src="assets/telegram-sendpulse.jpg" alt="Telegram to SendPulse automation case cover" /></div>
+        <div class="project-card-body">
+          <div class="card-meta"><span>Automation</span><span>Python / Telethon</span></div>
+          <h3>Telegram → SendPulse Automation</h3>
+          <p>Turned manual Telegram contact transfer into an always-on email acquisition and synchronization pipeline.</p>
+          <button class="text-link open-project">View case <span>↗</span></button>
+        </div>
+      </article>
+
+      <article class="project-card" data-tags="backend automation" data-project="confidential">
+        <div class="project-cover generated-cover cover-confidential">
+          <div class="cover-label">CONFIDENTIAL COMMERCIAL PRODUCT</div>
+          <div class="flow-diagram">
+            <div class="flow-node"><span>API</span><small>external data</small></div><i>→</i>
+            <div class="flow-node core"><span>PY</span><small>async services</small></div><i>→</i>
+            <div class="flow-node"><span>DB</span><small>state + transactions</small></div>
+          </div>
+          <div class="cover-footer"><b>Reliability · Data Pipelines · Concurrency</b><span>2026</span></div>
+        </div>
+        <div class="project-card-body">
+          <div class="card-meta"><span>Backend</span><span>NDA-safe case</span></div>
+          <h3>Confidential Python SaaS — Reliability & Data Pipelines</h3>
+          <p>Production backend work around async orchestration, transactional consistency, external AI/data services and failure recovery.</p>
+          <button class="text-link open-project">View case <span>↗</span></button>
+        </div>
+      </article>
+
+      <article class="project-card" data-tags="recovery backend" data-project="magento">
+        <div class="project-cover generated-cover cover-magento">
+          <div class="retro-window">
+            <div class="retro-bar"><span></span><span></span><span></span><b>legacy-dev</b></div>
+            <pre>$ git deploy dev
+✓ nginx / PHP-FPM / MariaDB
+✓ GitHub release workflow
+✓ admin restored
+! legacy HTTP 500 traced
+! malicious module code neutralized
+✓ reproducible DEV environment</pre>
+          </div>
+          <div class="cover-footer"><b>Magento 1.9 · DEV Recovery</b><span>Legacy PHP</span></div>
+        </div>
+        <div class="project-card-body">
+          <div class="card-meta"><span>Legacy Recovery</span><span>Magento 1.9</span></div>
+          <h3>Magento 1.9 — DEV Environment & Legacy Stabilization</h3>
+          <p>Built a reproducible DEV environment, replaced manual SFTP deployment and stabilized critical failures in a damaged legacy stack.</p>
+          <button class="text-link open-project">View case <span>↗</span></button>
+        </div>
+      </article>
+
+      <article class="project-card" data-tags="api backend" data-project="google">
+        <div class="project-cover image-cover"><img src="assets/google-business-profile.jpg" alt="Google Business Profile API OAuth approval case cover" /></div>
+        <div class="project-card-body">
+          <div class="card-meta"><span>API / OAuth</span><span>Google Cloud</span></div>
+          <h3>Google Business Profile API — Approval & OAuth</h3>
+          <p>Prepared a SaaS integration for renewed Google review after a previous rejection, including OAuth flow, demo and compliance materials.</p>
+          <button class="text-link open-project">View case <span>↗</span></button>
+        </div>
+      </article>
+
+      <article class="project-card" data-tags="ai backend automation" data-project="freshhouse">
+        <div class="project-cover generated-cover cover-ocr">
+          <div class="doc-stack">
+            <div class="doc doc-a"><span>PDF</span><b>Invoice</b><small>$1,386.08</small></div>
+            <div class="doc doc-b"><span>IMG</span><b>Handwritten</b><small>camera photo</small></div>
+            <div class="doc doc-c"><span>AI</span><b>Structured JSON</b><small>validated fields</small></div>
+          </div>
+          <div class="ocr-path"><span>text extract</span><i>→</i><span>vision / OCR</span><i>→</i><span>LLM classify</span></div>
+          <div class="cover-footer"><b>Fresh House · Document AI</b><span>Multi-modal ingestion</span></div>
+        </div>
+        <div class="project-card-body">
+          <div class="card-meta"><span>Document AI</span><span>OCR / Vision</span></div>
+          <h3>Fresh House — AI Document Ingestion & OCR</h3>
+          <p>Multi-modal extraction pipeline for invoices and sewer inspection reports across text PDFs, scans, phone photos and handwritten forms.</p>
+          <button class="text-link open-project">View case <span>↗</span></button>
+        </div>
+      </article>
+
+      <article class="project-card" data-tags="recovery backend" data-project="ktrack">
+        <div class="project-cover generated-cover cover-ktrack">
+          <div class="mobile-shell">
+            <div class="mobile-head"><span>KTrack</span><small>Work Orders</small></div>
+            <div class="work-row"><i>PASS</i><span>iOS simulator build</span></div>
+            <div class="work-row"><i>PASS</i><span>Azure slot2 API</span></div>
+            <div class="work-row warn"><i>FAIL</i><span>Offline Work Orders</span></div>
+            <div class="work-row warn"><i>CRASH</i><span>Production root cause</span></div>
+          </div>
+          <div class="diagnostic-lines"><span>Xamarin.Forms</span><span>iOS</span><span>Azure</span><span>Offline Sync</span></div>
+          <div class="cover-footer"><b>KTrack Mobile</b><span>Recovery & Validation</span></div>
+        </div>
+        <div class="project-card-body">
+          <div class="card-meta"><span>Legacy Recovery</span><span>Xamarin / iOS</span></div>
+          <h3>KTrack Mobile — iOS Recovery & Production Audit</h3>
+          <p>Recovered the iOS build path, deployed the backend to Azure, validated Work Orders and isolated production crash/offline-sync failures.</p>
+          <button class="text-link open-project">View case <span>↗</span></button>
+        </div>
+      </article>
+    </section>
+
+    <section class="capabilities section-shell" id="capabilities">
+      <div class="kicker">Capabilities</div>
+      <div class="cap-grid">
+        <div class="cap"><span>01</span><h3>Backend & APIs</h3><p>FastAPI, REST, PostgreSQL, SQLAlchemy, Redis, asynchronous services, migrations and integration boundaries.</p></div>
+        <div class="cap"><span>02</span><h3>Automation</h3><p>Telegram, external APIs, background processing, retries, scheduling, synchronization, logging and operational handoff.</p></div>
+        <div class="cap"><span>03</span><h3>Document AI</h3><p>Text extraction, OCR/vision fallback, structured extraction, classification, validation and multi-modal pipelines.</p></div>
+        <div class="cap"><span>04</span><h3>Recovery & Audits</h3><p>Legacy codebases, build environments, production failures, deployment paths, root-cause analysis and stabilization plans.</p></div>
+      </div>
+    </section>
+
+    <section class="about section-shell" id="about">
+      <div>
+        <div class="kicker">How I work</div>
+        <h2>Audit first when the real problem is unclear.</h2>
+      </div>
+      <div class="about-copy">
+        <p>I am most useful on projects where the difficult part is not writing one more endpoint — it is understanding where the system actually fails, choosing a maintainable boundary and getting the whole path to work under real conditions.</p>
+        <p>That can mean tracing a broken legacy mobile build, validating an OAuth approval path, making a data pipeline resilient to external failures or separating environment problems from business-logic defects.</p>
+      </div>
+    </section>
+
+    <section class="contact section-shell" id="contact">
+      <div>
+        <div class="kicker">Available for contract work</div>
+        <h2>Have a difficult integration, automation or backend problem?</h2>
+      </div>
+      <div class="contact-card">
+        <p>Use this portfolio as a case-study overview. Add your preferred Upwork / email / Telegram contact link before publishing.</p>
+        <a class="btn btn-primary" href="#top">Back to work</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer section-shell"><span>© 2026 Yurii Sachenko</span><span>Python · AI · Integrations · Recovery</span></footer>
+
+  <div class="drawer-backdrop" id="drawerBackdrop" hidden></div>
+  <aside class="project-drawer" id="projectDrawer" aria-hidden="true" aria-label="Project details">
+    <button class="drawer-close" id="drawerClose" aria-label="Close project">×</button>
+    <div id="drawerContent"></div>
+  </aside>
+
+  <script src="script.js"></script>
+</body>
+</html>
