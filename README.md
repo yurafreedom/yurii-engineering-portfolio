@@ -14,8 +14,15 @@ python3 -m http.server 8080
 
 Then open http://localhost:8080
 
-## Before publishing
+## Deployment
 
-- Replace the contact section with your real Upwork / email / Telegram links.
-- Review wording of confidential case studies before public release.
-- Host on GitHub Pages, Netlify, Vercel or any static host.
+Served as a static site from the repository root (GitHub Pages, Netlify, Vercel
+or any static host). There is nothing to build.
+
+## Content notes
+
+- Case studies are written to stay technically accurate without disclosing
+  client identities or confidential implementation details.
+- The Document AI case is published in anonymised form: the client is described
+  by sector only, and the figures shown on its card are illustrative.
+- Cover images in `assets/` are synthetic mock-ups, not client screenshots.
