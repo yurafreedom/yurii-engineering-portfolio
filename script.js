@@ -67,18 +67,18 @@ const projects = {
     result:'The client received a review-ready integration, corrected OAuth flow, demo and documentation required to continue the Google API approval process. Client feedback specifically highlighted Google API/OAuth knowledge, proactive communication, documentation quality and the polished demo.',
     stack:['Google Business Profile API','Google Cloud Console','OAuth 2.0','Google APIs','SaaS Integration','Authentication','API Compliance']
   },
-  freshhouse: {
+  'property-management': {
     tags:['Document AI','OCR','Vision / LLM'],
-    title:'Fresh House — AI Document Ingestion & OCR',
+    title:'Property Management — AI Document Ingestion & OCR',
     role:'AI / Document Processing Engineer',
-    summary:'Built a multi-modal ingestion workflow for property-management documents received from plumbing and sewer-inspection contractors in inconsistent formats.',
+    summary:'Built a multi-modal ingestion workflow for a US property-management company working with plumbing, sewer, electrical and HVAC contractors, whose service documents arrived in inconsistent formats.',
     challenge:'The corpus mixed clean text PDFs, image-heavy scans and phone photos of handwritten paper forms. A single OCR-only strategy would waste cost on digital PDFs and still struggle with the hardest handwritten inputs.',
     work:[
       'Separated direct text extraction from true OCR cases so digital PDFs could be parsed without unnecessary vision processing.',
       'Handled sewer-inspection reports from multiple vendors with different document structures and data density.',
       'Defined structured extraction for inspector/company details, property address, customer, inspection date, service type, pipe material, problem type, recommendations, estimates and video links.',
       'Handled plumbing invoices with line-item and total extraction.',
-      'Designed the difficult path for phone photos of handwritten Drain Clean USA forms: image-based OCR/vision plus LLM-assisted normalization/classification.',
+      'Designed the difficult path for phone photos of handwritten contractor service forms: image-based OCR/vision plus LLM-assisted normalization/classification.',
       'Used fallback-oriented processing rather than treating every document as the same input type.'
     ],
     result:'A document-processing approach capable of routing clean digital documents through lightweight extraction while reserving OCR/vision for scans and handwritten photos, with normalized structured fields for downstream use.',
