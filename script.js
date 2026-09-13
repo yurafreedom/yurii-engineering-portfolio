@@ -79,6 +79,7 @@ const projects = {
       'Defined structured extraction for inspector/company details, property address, customer, inspection date, service type, pipe material, problem type, recommendations, estimates and video links.',
       'Handled plumbing invoices with line-item and total extraction.',
       'Designed the difficult path for phone photos of handwritten contractor service forms: image-based OCR/vision plus LLM-assisted normalization/classification.',
+      'Routed low-confidence and failed extractions to a reviewer screen where an operator corrects the extracted fields and confirms the document before its data is used downstream.',
       'Used fallback-oriented processing rather than treating every document as the same input type.'
     ],
     result:'A document-processing approach capable of routing clean digital documents through lightweight extraction while reserving OCR/vision for scans and handwritten photos, with normalized structured fields for downstream use.',
