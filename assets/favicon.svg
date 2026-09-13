@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="YS">
+  <defs>
+    <linearGradient id="ys" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#7c5cff"/>
+      <stop offset="1" stop-color="#20c5d8"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="19" ry="19" fill="url(#ys)"/>
+  <rect x=".5" y=".5" width="63" height="63" rx="18.5" ry="18.5" fill="none" stroke="#ffffff" stroke-opacity=".18"/>
+  <text x="32" y="33" fill="#ffffff" font-family="Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="26" font-weight="700" letter-spacing="-1" text-anchor="middle" dominant-baseline="central">YS</text>
+</svg>
