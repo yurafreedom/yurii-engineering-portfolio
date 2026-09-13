@@ -10,3 +10,5 @@
 @keyframes heroEnter{to{opacity:1;transform:none}}@keyframes panelEnter{to{opacity:1;transform:none}}@keyframes terminalLine{to{opacity:1;transform:none}}@keyframes pulseDot{0%,100%{box-shadow:0 0 8px #20c5d888;transform:scale(1)}50%{box-shadow:0 0 26px #20c5d8;transform:scale(1.22)}}@keyframes brandFloat{0%,100%{transform:translateY(0) rotate(0)}50%{transform:translateY(-2px) rotate(2deg)}}@keyframes drawerContent{from{opacity:0;transform:translateX(18px)}to{opacity:1;transform:none}}
 @media(max-width:920px){.cursor-glow{display:none}.project-card.in-view:hover{transform:translateY(-5px)}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.ambient-canvas,.cursor-glow{display:none}.reveal,.hero-copy>*,.hero-panel,.terminal-row,.brand-mark,.pulse,.project-drawer.open .drawer-hero,.project-drawer.open .drawer-section{opacity:1!important;transform:none!important;filter:none!important;animation:none!important;transition:none!important}}
+
+.contact-links{display:flex;flex-wrap:wrap;gap:10px;margin:22px 0}
